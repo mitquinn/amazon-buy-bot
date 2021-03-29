@@ -1,0 +1,857 @@
+{
+  "id": "20e32863-e4ba-45c1-b53d-ca7be7eb1f97",
+  "version": "2.0",
+  "name": "Newegg Autobuy",
+  "url": "https://www.newegg.com/",
+  "tests": [{
+    "id": "eaa8cc05-a46e-401c-914c-a725afbc93f8",
+    "name": "Autobuy MSI GeForce RTX 3060",
+    "commands": [{
+      "id": "dfcea4d7-e8e2-4720-9302-86aab7ff7022",
+      "comment": "",
+      "command": "open",
+      "target": "https://www.newegg.com/gigabyte-geforce-rtx-3060-gv-n3060eagle-12gd/p/N82E16814932399",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "e5303869-953a-476d-bf39-771cd12757e0",
+      "comment": "",
+      "command": "assertNotText",
+      "target": "css=.flags-body > span",
+      "targets": [],
+      "value": "OUT OF STOCK"
+    }, {
+      "id": "31993750-5745-4504-be5b-4b3ae716d334",
+      "comment": "",
+      "command": "assertText",
+      "target": "css=.btn-wide",
+      "targets": [],
+      "value": "ADD TO CART"
+    }, {
+      "id": "c062409b-7a24-424d-bc7b-7a923c15430f",
+      "comment": "",
+      "command": "click",
+      "target": "xpath=//div[@id='ProductBuy']/div/div[2]/button",
+      "targets": [
+        ["css=.btn-wide", "css:finder"],
+        ["xpath=//div[@id='ProductBuy']/div/div[2]/button", "xpath:idRelative"],
+        ["xpath=//div[2]/button", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "7071e344-a480-4bc8-905b-62582913b73e",
+      "comment": "",
+      "command": "click",
+      "target": "xpath=//div[@id='modal-intermediary']/div/div/div[2]/div[2]/button[2]",
+      "targets": [
+        ["css=.btn-undefined", "css:finder"],
+        ["xpath=//div[@id='modal-intermediary']/div/div/div[2]/div[2]/button[2]", "xpath:idRelative"],
+        ["xpath=//div[2]/div[2]/button[2]", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "c52ed649-3370-4b81-8d7c-48b5058938c3",
+      "comment": "",
+      "command": "click",
+      "target": "xpath=//div[@id='app']/div/section/div/div/form/div[2]/div[3]/div/div/div[3]/div/button",
+      "targets": [
+        ["css=.btn-primary", "css:finder"],
+        ["xpath=(//button[@type='button'])[9]", "xpath:attributes"],
+        ["xpath=//div[@id='app']/div/section/div/div/form/div[2]/div[3]/div/div/div[3]/div/button", "xpath:idRelative"],
+        ["xpath=//div[3]/div/button", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "67ceaddc-59f5-4431-9a0a-22016c7fcc81",
+      "comment": "",
+      "command": "click",
+      "target": "css=.item-cell:nth-child(2) > .checkout-step .btn",
+      "targets": [
+        ["css=.item-cell:nth-child(2) > .checkout-step .btn", "css:finder"],
+        ["xpath=(//button[@type='button'])[9]", "xpath:attributes"],
+        ["xpath=//div[@id='app']/div/section/div/div/form/div[2]/div/div/div[2]/div/div[3]/button", "xpath:idRelative"],
+        ["xpath=//div[2]/div/div[3]/button", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "e5037f90-1776-4229-8903-16207990e85f",
+      "comment": "",
+      "command": "click",
+      "target": "css=.mask-cvv-4",
+      "targets": [
+        ["css=.mask-cvv-4", "css:finder"],
+        ["xpath=//input[@value='_ _ _']", "xpath:attributes"],
+        ["xpath=//div[@id='app']/div/section/div/div/form/div[2]/div/div/div[3]/div/div[2]/div/div[3]/div[2]/div[3]/div/div/label/div[4]/input", "xpath:idRelative"],
+        ["xpath=//div[4]/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "864c28f8-359a-457b-94aa-ac61237f68e3",
+      "comment": "",
+      "command": "type",
+      "target": "css=.mask-cvv-4",
+      "targets": [
+        ["css=.mask-cvv-4", "css:finder"],
+        ["xpath=//input[@value='1 2 7']", "xpath:attributes"],
+        ["xpath=//div[@id='app']/div/section/div/div/form/div[2]/div/div/div[3]/div/div[2]/div/div[3]/div[2]/div[3]/div/div/label/div[4]/input", "xpath:idRelative"],
+        ["xpath=//div[4]/input", "xpath:position"]
+      ],
+      "value": "1 2 7"
+    }, {
+      "id": "0294782b-f2bf-4946-8bbe-4501f50f2756",
+      "comment": "",
+      "command": "click",
+      "target": "css=.item-cell:nth-child(3) .checkout-step-action > .btn",
+      "targets": [
+        ["css=.item-cell:nth-child(3) .checkout-step-action > .btn", "css:finder"],
+        ["xpath=(//button[@type='button'])[13]", "xpath:attributes"],
+        ["xpath=//div[@id='app']/div/section/div/div/form/div[2]/div/div/div[3]/div/div[3]/button", "xpath:idRelative"],
+        ["xpath=//div[3]/div/div[3]/button", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "0fdac09b-17ed-4649-9473-d4867a0ba474",
+      "comment": "",
+      "command": "click",
+      "target": "id=btnCreditCard",
+      "targets": [
+        ["id=btnCreditCard", "id"],
+        ["css=#btnCreditCard", "css:finder"],
+        ["xpath=//button[@id='btnCreditCard']", "xpath:attributes"],
+        ["xpath=//div[@id='app']/div/section/div/div/form/div[2]/div[3]/div/div/div[5]/div/button", "xpath:idRelative"],
+        ["xpath=//div[5]/div/button", "xpath:position"]
+      ],
+      "value": ""
+    }]
+  }, {
+    "id": "3276cbad-5ddd-4279-9ffe-60c78105ab4e",
+    "name": "AutoBuy GIGABYTE GeForce RTX 3060",
+    "commands": [{
+      "id": "dc1f1729-d933-4d46-97eb-ee4201959520",
+      "comment": "",
+      "command": "open",
+      "target": "https://www.newegg.com/msi-geforce-rtx-3060-rtx-3060-ventus-2x-12g/p/N82E16814137638",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "017466bd-0ca4-4888-bf33-ce0b9fff802b",
+      "comment": "",
+      "command": "assertNotText",
+      "target": "css=.flags-body > span",
+      "targets": [],
+      "value": "OUT OF STOCK"
+    }, {
+      "id": "d308e303-4c46-4c42-bc9a-a9473ec4e1b2",
+      "comment": "",
+      "command": "assertText",
+      "target": "css=.btn-wide",
+      "targets": [],
+      "value": "ADD TO CART"
+    }, {
+      "id": "f90c1285-8fd9-4e5b-baf4-7683e913ba33",
+      "comment": "",
+      "command": "click",
+      "target": "xpath=//div[@id='ProductBuy']/div/div[2]/button",
+      "targets": [
+        ["css=.btn-wide", "css:finder"],
+        ["xpath=//div[@id='ProductBuy']/div/div[2]/button", "xpath:idRelative"],
+        ["xpath=//div[2]/button", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "143a0322-d0f0-45a6-8259-3d0d28b9d971",
+      "comment": "",
+      "command": "click",
+      "target": "xpath=//div[@id='modal-intermediary']/div/div/div[2]/div[2]/button[2]",
+      "targets": [
+        ["css=.btn-undefined", "css:finder"],
+        ["xpath=//div[@id='modal-intermediary']/div/div/div[2]/div[2]/button[2]", "xpath:idRelative"],
+        ["xpath=//div[2]/div[2]/button[2]", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "9f5fe237-8bd1-405e-bb6e-ed62db3b9c4e",
+      "comment": "",
+      "command": "click",
+      "target": "xpath=//div[@id='app']/div/section/div/div/form/div[2]/div[3]/div/div/div[3]/div/button",
+      "targets": [
+        ["css=.btn-primary", "css:finder"],
+        ["xpath=(//button[@type='button'])[9]", "xpath:attributes"],
+        ["xpath=//div[@id='app']/div/section/div/div/form/div[2]/div[3]/div/div/div[3]/div/button", "xpath:idRelative"],
+        ["xpath=//div[3]/div/button", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "7ccd8b40-d5af-4056-b823-a8e562db1cb9",
+      "comment": "",
+      "command": "click",
+      "target": "css=.item-cell:nth-child(2) > .checkout-step .btn",
+      "targets": [
+        ["css=.item-cell:nth-child(2) > .checkout-step .btn", "css:finder"],
+        ["xpath=(//button[@type='button'])[9]", "xpath:attributes"],
+        ["xpath=//div[@id='app']/div/section/div/div/form/div[2]/div/div/div[2]/div/div[3]/button", "xpath:idRelative"],
+        ["xpath=//div[2]/div/div[3]/button", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "b39e3eb0-a9c9-460f-8d51-a768ae373e55",
+      "comment": "",
+      "command": "click",
+      "target": "css=.mask-cvv-4",
+      "targets": [
+        ["css=.mask-cvv-4", "css:finder"],
+        ["xpath=//input[@value='_ _ _']", "xpath:attributes"],
+        ["xpath=//div[@id='app']/div/section/div/div/form/div[2]/div/div/div[3]/div/div[2]/div/div[3]/div[2]/div[3]/div/div/label/div[4]/input", "xpath:idRelative"],
+        ["xpath=//div[4]/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "5407ab14-3808-466e-a5c4-7a9db0ebf49c",
+      "comment": "",
+      "command": "type",
+      "target": "css=.mask-cvv-4",
+      "targets": [
+        ["css=.mask-cvv-4", "css:finder"],
+        ["xpath=//input[@value='1 2 7']", "xpath:attributes"],
+        ["xpath=//div[@id='app']/div/section/div/div/form/div[2]/div/div/div[3]/div/div[2]/div/div[3]/div[2]/div[3]/div/div/label/div[4]/input", "xpath:idRelative"],
+        ["xpath=//div[4]/input", "xpath:position"]
+      ],
+      "value": "1 2 7"
+    }, {
+      "id": "37cb4583-8186-4f6e-8b2b-99ae8aa8a67c",
+      "comment": "",
+      "command": "click",
+      "target": "css=.item-cell:nth-child(3) .checkout-step-action > .btn",
+      "targets": [
+        ["css=.item-cell:nth-child(3) .checkout-step-action > .btn", "css:finder"],
+        ["xpath=(//button[@type='button'])[13]", "xpath:attributes"],
+        ["xpath=//div[@id='app']/div/section/div/div/form/div[2]/div/div/div[3]/div/div[3]/button", "xpath:idRelative"],
+        ["xpath=//div[3]/div/div[3]/button", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "09942289-de52-4ac0-9417-7379f87c59ea",
+      "comment": "",
+      "command": "click",
+      "target": "id=btnCreditCard",
+      "targets": [
+        ["id=btnCreditCard", "id"],
+        ["css=#btnCreditCard", "css:finder"],
+        ["xpath=//button[@id='btnCreditCard']", "xpath:attributes"],
+        ["xpath=//div[@id='app']/div/section/div/div/form/div[2]/div[3]/div/div/div[5]/div/button", "xpath:idRelative"],
+        ["xpath=//div[5]/div/button", "xpath:position"]
+      ],
+      "value": ""
+    }]
+  }, {
+    "id": "e5057b77-be68-45b8-874d-c0580db5a045",
+    "name": "Autobuy EVGA GeForce RTX 3060 XC BLACK GAMING",
+    "commands": [{
+      "id": "cd942666-f4c8-4875-9c66-39b9e0e78f63",
+      "comment": "",
+      "command": "open",
+      "target": "https://www.newegg.com/evga-geforce-rtx-3060-12g-p5-3655-kr/p/N82E16814487538",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "27149c74-db33-4d55-9f35-118f4ec3c0d5",
+      "comment": "",
+      "command": "assertNotText",
+      "target": "css=.flags-body > span",
+      "targets": [],
+      "value": "OUT OF STOCK"
+    }, {
+      "id": "fc1091c7-5713-4d80-86fa-952785b623bb",
+      "comment": "",
+      "command": "assertText",
+      "target": "css=.btn-wide",
+      "targets": [],
+      "value": "ADD TO CART"
+    }, {
+      "id": "8a92d5bc-a775-48ef-8881-e739a598d11e",
+      "comment": "",
+      "command": "click",
+      "target": "xpath=//div[@id='ProductBuy']/div/div[2]/button",
+      "targets": [
+        ["css=.btn-wide", "css:finder"],
+        ["xpath=//div[@id='ProductBuy']/div/div[2]/button", "xpath:idRelative"],
+        ["xpath=//div[2]/button", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "9032b7fd-242e-46dc-8aae-4bc9e08209ec",
+      "comment": "",
+      "command": "click",
+      "target": "xpath=//div[@id='modal-intermediary']/div/div/div[2]/div[2]/button[2]",
+      "targets": [
+        ["css=.btn-undefined", "css:finder"],
+        ["xpath=//div[@id='modal-intermediary']/div/div/div[2]/div[2]/button[2]", "xpath:idRelative"],
+        ["xpath=//div[2]/div[2]/button[2]", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "679bafa9-4226-48ac-9532-bacdf1331ce9",
+      "comment": "",
+      "command": "click",
+      "target": "xpath=//div[@id='app']/div/section/div/div/form/div[2]/div[3]/div/div/div[3]/div/button",
+      "targets": [
+        ["css=.btn-primary", "css:finder"],
+        ["xpath=(//button[@type='button'])[9]", "xpath:attributes"],
+        ["xpath=//div[@id='app']/div/section/div/div/form/div[2]/div[3]/div/div/div[3]/div/button", "xpath:idRelative"],
+        ["xpath=//div[3]/div/button", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "800478e2-0966-462e-8417-2ca969f1b8ac",
+      "comment": "",
+      "command": "click",
+      "target": "css=.item-cell:nth-child(2) > .checkout-step .btn",
+      "targets": [
+        ["css=.item-cell:nth-child(2) > .checkout-step .btn", "css:finder"],
+        ["xpath=(//button[@type='button'])[9]", "xpath:attributes"],
+        ["xpath=//div[@id='app']/div/section/div/div/form/div[2]/div/div/div[2]/div/div[3]/button", "xpath:idRelative"],
+        ["xpath=//div[2]/div/div[3]/button", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "ad33aa1f-79f2-454a-b33f-0a9b9ce2457f",
+      "comment": "",
+      "command": "click",
+      "target": "css=.mask-cvv-4",
+      "targets": [
+        ["css=.mask-cvv-4", "css:finder"],
+        ["xpath=//input[@value='_ _ _']", "xpath:attributes"],
+        ["xpath=//div[@id='app']/div/section/div/div/form/div[2]/div/div/div[3]/div/div[2]/div/div[3]/div[2]/div[3]/div/div/label/div[4]/input", "xpath:idRelative"],
+        ["xpath=//div[4]/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "b305604e-31c6-4770-9af3-49bdf09732cc",
+      "comment": "",
+      "command": "type",
+      "target": "css=.mask-cvv-4",
+      "targets": [
+        ["css=.mask-cvv-4", "css:finder"],
+        ["xpath=//input[@value='1 2 7']", "xpath:attributes"],
+        ["xpath=//div[@id='app']/div/section/div/div/form/div[2]/div/div/div[3]/div/div[2]/div/div[3]/div[2]/div[3]/div/div/label/div[4]/input", "xpath:idRelative"],
+        ["xpath=//div[4]/input", "xpath:position"]
+      ],
+      "value": "1 2 7"
+    }, {
+      "id": "b6f5d1a6-7d80-42a3-aa10-676ceef10f4e",
+      "comment": "",
+      "command": "click",
+      "target": "css=.item-cell:nth-child(3) .checkout-step-action > .btn",
+      "targets": [
+        ["css=.item-cell:nth-child(3) .checkout-step-action > .btn", "css:finder"],
+        ["xpath=(//button[@type='button'])[13]", "xpath:attributes"],
+        ["xpath=//div[@id='app']/div/section/div/div/form/div[2]/div/div/div[3]/div/div[3]/button", "xpath:idRelative"],
+        ["xpath=//div[3]/div/div[3]/button", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "2c84f0d1-f235-46d6-9273-facfa8d65a5a",
+      "comment": "",
+      "command": "click",
+      "target": "id=btnCreditCard",
+      "targets": [
+        ["id=btnCreditCard", "id"],
+        ["css=#btnCreditCard", "css:finder"],
+        ["xpath=//button[@id='btnCreditCard']", "xpath:attributes"],
+        ["xpath=//div[@id='app']/div/section/div/div/form/div[2]/div[3]/div/div/div[5]/div/button", "xpath:idRelative"],
+        ["xpath=//div[5]/div/button", "xpath:position"]
+      ],
+      "value": ""
+    }]
+  }, {
+    "id": "fed3735f-2c86-4b51-ab86-ad49465b178b",
+    "name": "Autobuy ZOTAC GAMING GeForce RTX 3060 Twin Edge",
+    "commands": [{
+      "id": "41c659e5-fe51-434c-b33f-27a6e5b7afb6",
+      "comment": "",
+      "command": "open",
+      "target": "https://www.newegg.com/zotac-geforce-rtx-3060-zt-a30600e-10m/p/N82E16814500509",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "f31f1cf3-cb77-4acc-9c4b-88eb0ab2c26a",
+      "comment": "",
+      "command": "assertNotText",
+      "target": "css=.flags-body > span",
+      "targets": [],
+      "value": "OUT OF STOCK"
+    }, {
+      "id": "a52915e2-897b-42cc-a3b6-87e80691b793",
+      "comment": "",
+      "command": "assertText",
+      "target": "css=.btn-wide",
+      "targets": [],
+      "value": "ADD TO CART"
+    }, {
+      "id": "faaa05cb-5d11-4605-ac8a-f34d20558140",
+      "comment": "",
+      "command": "click",
+      "target": "xpath=//div[@id='ProductBuy']/div/div[2]/button",
+      "targets": [
+        ["css=.btn-wide", "css:finder"],
+        ["xpath=//div[@id='ProductBuy']/div/div[2]/button", "xpath:idRelative"],
+        ["xpath=//div[2]/button", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "44e49d99-0b40-47d0-a8bb-037f96549a73",
+      "comment": "",
+      "command": "click",
+      "target": "xpath=//div[@id='modal-intermediary']/div/div/div[2]/div[2]/button[2]",
+      "targets": [
+        ["css=.btn-undefined", "css:finder"],
+        ["xpath=//div[@id='modal-intermediary']/div/div/div[2]/div[2]/button[2]", "xpath:idRelative"],
+        ["xpath=//div[2]/div[2]/button[2]", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "5539ee94-e556-47a3-8f4e-954e2217ae0d",
+      "comment": "",
+      "command": "click",
+      "target": "xpath=//div[@id='app']/div/section/div/div/form/div[2]/div[3]/div/div/div[3]/div/button",
+      "targets": [
+        ["css=.btn-primary", "css:finder"],
+        ["xpath=(//button[@type='button'])[9]", "xpath:attributes"],
+        ["xpath=//div[@id='app']/div/section/div/div/form/div[2]/div[3]/div/div/div[3]/div/button", "xpath:idRelative"],
+        ["xpath=//div[3]/div/button", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "722d2942-884a-4b05-a54c-b32b6bf687f2",
+      "comment": "",
+      "command": "click",
+      "target": "css=.item-cell:nth-child(2) > .checkout-step .btn",
+      "targets": [
+        ["css=.item-cell:nth-child(2) > .checkout-step .btn", "css:finder"],
+        ["xpath=(//button[@type='button'])[9]", "xpath:attributes"],
+        ["xpath=//div[@id='app']/div/section/div/div/form/div[2]/div/div/div[2]/div/div[3]/button", "xpath:idRelative"],
+        ["xpath=//div[2]/div/div[3]/button", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "d8a0397a-98de-40e7-a342-e7bc0a0fd226",
+      "comment": "",
+      "command": "click",
+      "target": "css=.mask-cvv-4",
+      "targets": [
+        ["css=.mask-cvv-4", "css:finder"],
+        ["xpath=//input[@value='_ _ _']", "xpath:attributes"],
+        ["xpath=//div[@id='app']/div/section/div/div/form/div[2]/div/div/div[3]/div/div[2]/div/div[3]/div[2]/div[3]/div/div/label/div[4]/input", "xpath:idRelative"],
+        ["xpath=//div[4]/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "e972114a-d98c-4a93-b2a1-057c687fa751",
+      "comment": "",
+      "command": "type",
+      "target": "css=.mask-cvv-4",
+      "targets": [
+        ["css=.mask-cvv-4", "css:finder"],
+        ["xpath=//input[@value='1 2 7']", "xpath:attributes"],
+        ["xpath=//div[@id='app']/div/section/div/div/form/div[2]/div/div/div[3]/div/div[2]/div/div[3]/div[2]/div[3]/div/div/label/div[4]/input", "xpath:idRelative"],
+        ["xpath=//div[4]/input", "xpath:position"]
+      ],
+      "value": "1 2 7"
+    }, {
+      "id": "d8b72615-4d13-4d33-a2a1-4ed7d9094b65",
+      "comment": "",
+      "command": "click",
+      "target": "css=.item-cell:nth-child(3) .checkout-step-action > .btn",
+      "targets": [
+        ["css=.item-cell:nth-child(3) .checkout-step-action > .btn", "css:finder"],
+        ["xpath=(//button[@type='button'])[13]", "xpath:attributes"],
+        ["xpath=//div[@id='app']/div/section/div/div/form/div[2]/div/div/div[3]/div/div[3]/button", "xpath:idRelative"],
+        ["xpath=//div[3]/div/div[3]/button", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "7619e80a-857c-4fd9-9719-60fca02f3395",
+      "comment": "",
+      "command": "click",
+      "target": "id=btnCreditCard",
+      "targets": [
+        ["id=btnCreditCard", "id"],
+        ["css=#btnCreditCard", "css:finder"],
+        ["xpath=//button[@id='btnCreditCard']", "xpath:attributes"],
+        ["xpath=//div[@id='app']/div/section/div/div/form/div[2]/div[3]/div/div/div[5]/div/button", "xpath:idRelative"],
+        ["xpath=//div[5]/div/button", "xpath:position"]
+      ],
+      "value": ""
+    }]
+  }, {
+    "id": "ac7bb9d6-a554-495a-9a58-67bc5a14b857",
+    "name": "Autobuy GIGABYTE GeForce RTX 3060 Ti",
+    "commands": [{
+      "id": "bfd9d98f-4d49-4ff1-89b9-db8eb5325092",
+      "comment": "",
+      "command": "open",
+      "target": "https://www.newegg.com/gigabyte-geforce-rtx-3060-ti-gv-n306teagle-8gd/p/N82E16814932379",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "e4f56fee-e928-45d5-b162-f3b15a4a13da",
+      "comment": "",
+      "command": "assertNotText",
+      "target": "css=.flags-body > span",
+      "targets": [],
+      "value": "OUT OF STOCK"
+    }, {
+      "id": "a02d6590-2662-4438-9353-60589e6d481f",
+      "comment": "",
+      "command": "assertText",
+      "target": "css=.btn-wide",
+      "targets": [],
+      "value": "ADD TO CART"
+    }, {
+      "id": "415f6932-2efa-40f7-b849-6759be1149f1",
+      "comment": "",
+      "command": "click",
+      "target": "xpath=//div[@id='ProductBuy']/div/div[2]/button",
+      "targets": [
+        ["css=.btn-wide", "css:finder"],
+        ["xpath=//div[@id='ProductBuy']/div/div[2]/button", "xpath:idRelative"],
+        ["xpath=//div[2]/button", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "c8b0fbbc-9897-40fd-8d06-b6b71bc8fe18",
+      "comment": "",
+      "command": "click",
+      "target": "xpath=//div[@id='modal-intermediary']/div/div/div[2]/div[2]/button[2]",
+      "targets": [
+        ["css=.btn-undefined", "css:finder"],
+        ["xpath=//div[@id='modal-intermediary']/div/div/div[2]/div[2]/button[2]", "xpath:idRelative"],
+        ["xpath=//div[2]/div[2]/button[2]", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "a3a341bc-290e-40a4-b40f-6477cdc7add1",
+      "comment": "",
+      "command": "click",
+      "target": "xpath=//div[@id='app']/div/section/div/div/form/div[2]/div[3]/div/div/div[3]/div/button",
+      "targets": [
+        ["css=.btn-primary", "css:finder"],
+        ["xpath=(//button[@type='button'])[9]", "xpath:attributes"],
+        ["xpath=//div[@id='app']/div/section/div/div/form/div[2]/div[3]/div/div/div[3]/div/button", "xpath:idRelative"],
+        ["xpath=//div[3]/div/button", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "33aa6517-0e29-462f-a75d-85846ff10e44",
+      "comment": "",
+      "command": "click",
+      "target": "css=.item-cell:nth-child(2) > .checkout-step .btn",
+      "targets": [
+        ["css=.item-cell:nth-child(2) > .checkout-step .btn", "css:finder"],
+        ["xpath=(//button[@type='button'])[9]", "xpath:attributes"],
+        ["xpath=//div[@id='app']/div/section/div/div/form/div[2]/div/div/div[2]/div/div[3]/button", "xpath:idRelative"],
+        ["xpath=//div[2]/div/div[3]/button", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "eb609628-8d87-425d-8a88-0d0e1ed78e45",
+      "comment": "",
+      "command": "click",
+      "target": "css=.mask-cvv-4",
+      "targets": [
+        ["css=.mask-cvv-4", "css:finder"],
+        ["xpath=//input[@value='_ _ _']", "xpath:attributes"],
+        ["xpath=//div[@id='app']/div/section/div/div/form/div[2]/div/div/div[3]/div/div[2]/div/div[3]/div[2]/div[3]/div/div/label/div[4]/input", "xpath:idRelative"],
+        ["xpath=//div[4]/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "80b0578b-0b82-42a3-9a1e-e797d00b384d",
+      "comment": "",
+      "command": "type",
+      "target": "css=.mask-cvv-4",
+      "targets": [
+        ["css=.mask-cvv-4", "css:finder"],
+        ["xpath=//input[@value='1 2 7']", "xpath:attributes"],
+        ["xpath=//div[@id='app']/div/section/div/div/form/div[2]/div/div/div[3]/div/div[2]/div/div[3]/div[2]/div[3]/div/div/label/div[4]/input", "xpath:idRelative"],
+        ["xpath=//div[4]/input", "xpath:position"]
+      ],
+      "value": "1 2 7"
+    }, {
+      "id": "6d12c4e7-f3c6-4207-bb41-49fd21191c02",
+      "comment": "",
+      "command": "click",
+      "target": "css=.item-cell:nth-child(3) .checkout-step-action > .btn",
+      "targets": [
+        ["css=.item-cell:nth-child(3) .checkout-step-action > .btn", "css:finder"],
+        ["xpath=(//button[@type='button'])[13]", "xpath:attributes"],
+        ["xpath=//div[@id='app']/div/section/div/div/form/div[2]/div/div/div[3]/div/div[3]/button", "xpath:idRelative"],
+        ["xpath=//div[3]/div/div[3]/button", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "c9e26d2d-e5f9-42aa-b0fe-a0d00db8aad3",
+      "comment": "",
+      "command": "click",
+      "target": "id=btnCreditCard",
+      "targets": [
+        ["id=btnCreditCard", "id"],
+        ["css=#btnCreditCard", "css:finder"],
+        ["xpath=//button[@id='btnCreditCard']", "xpath:attributes"],
+        ["xpath=//div[@id='app']/div/section/div/div/form/div[2]/div[3]/div/div/div[5]/div/button", "xpath:idRelative"],
+        ["xpath=//div[5]/div/button", "xpath:position"]
+      ],
+      "value": ""
+    }]
+  }, {
+    "id": "667d8643-a46b-4334-882a-a21680b32687",
+    "name": "Autobuy GIGABYTE GeForce RTX 3060 EAGLE OC ",
+    "commands": [{
+      "id": "e05c3d04-d1cd-4d5e-98ab-78645dc3f72a",
+      "comment": "",
+      "command": "open",
+      "target": "https://www.newegg.com/gigabyte-geforce-rtx-3060-gv-n3060eagle-oc-12gd/p/N82E16814932403",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "0e6d11cd-789e-4dce-a1dc-1f7ed6304648",
+      "comment": "",
+      "command": "assertNotText",
+      "target": "css=.flags-body > span",
+      "targets": [],
+      "value": "OUT OF STOCK"
+    }, {
+      "id": "59f0ae77-05da-49b8-971f-93b82cf7e9f2",
+      "comment": "",
+      "command": "assertText",
+      "target": "css=.btn-wide",
+      "targets": [],
+      "value": "ADD TO CART"
+    }, {
+      "id": "381d2ea5-291f-424e-b633-47310338e9ed",
+      "comment": "",
+      "command": "click",
+      "target": "xpath=//div[@id='ProductBuy']/div/div[2]/button",
+      "targets": [
+        ["css=.btn-wide", "css:finder"],
+        ["xpath=//div[@id='ProductBuy']/div/div[2]/button", "xpath:idRelative"],
+        ["xpath=//div[2]/button", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "09a7cb0f-9c59-4113-96f1-f05b9eb31318",
+      "comment": "",
+      "command": "click",
+      "target": "xpath=//div[@id='modal-intermediary']/div/div/div[2]/div[2]/button[2]",
+      "targets": [
+        ["css=.btn-undefined", "css:finder"],
+        ["xpath=//div[@id='modal-intermediary']/div/div/div[2]/div[2]/button[2]", "xpath:idRelative"],
+        ["xpath=//div[2]/div[2]/button[2]", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "517855e4-36d6-49e2-a15e-80523c91f4a2",
+      "comment": "",
+      "command": "click",
+      "target": "xpath=//div[@id='app']/div/section/div/div/form/div[2]/div[3]/div/div/div[3]/div/button",
+      "targets": [
+        ["css=.btn-primary", "css:finder"],
+        ["xpath=(//button[@type='button'])[9]", "xpath:attributes"],
+        ["xpath=//div[@id='app']/div/section/div/div/form/div[2]/div[3]/div/div/div[3]/div/button", "xpath:idRelative"],
+        ["xpath=//div[3]/div/button", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "17b39a52-39e9-4dc1-a14d-ed0fcff3b007",
+      "comment": "",
+      "command": "click",
+      "target": "css=.item-cell:nth-child(2) > .checkout-step .btn",
+      "targets": [
+        ["css=.item-cell:nth-child(2) > .checkout-step .btn", "css:finder"],
+        ["xpath=(//button[@type='button'])[9]", "xpath:attributes"],
+        ["xpath=//div[@id='app']/div/section/div/div/form/div[2]/div/div/div[2]/div/div[3]/button", "xpath:idRelative"],
+        ["xpath=//div[2]/div/div[3]/button", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "d62de16f-58c3-42ce-bd50-db43799756eb",
+      "comment": "",
+      "command": "click",
+      "target": "css=.mask-cvv-4",
+      "targets": [
+        ["css=.mask-cvv-4", "css:finder"],
+        ["xpath=//input[@value='_ _ _']", "xpath:attributes"],
+        ["xpath=//div[@id='app']/div/section/div/div/form/div[2]/div/div/div[3]/div/div[2]/div/div[3]/div[2]/div[3]/div/div/label/div[4]/input", "xpath:idRelative"],
+        ["xpath=//div[4]/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "686517fb-00a2-405e-aaf0-0a7289f93156",
+      "comment": "",
+      "command": "type",
+      "target": "css=.mask-cvv-4",
+      "targets": [
+        ["css=.mask-cvv-4", "css:finder"],
+        ["xpath=//input[@value='1 2 7']", "xpath:attributes"],
+        ["xpath=//div[@id='app']/div/section/div/div/form/div[2]/div/div/div[3]/div/div[2]/div/div[3]/div[2]/div[3]/div/div/label/div[4]/input", "xpath:idRelative"],
+        ["xpath=//div[4]/input", "xpath:position"]
+      ],
+      "value": "1 2 7"
+    }, {
+      "id": "5015fa8f-96bc-4fcd-961b-50e04c12cbfc",
+      "comment": "",
+      "command": "click",
+      "target": "css=.item-cell:nth-child(3) .checkout-step-action > .btn",
+      "targets": [
+        ["css=.item-cell:nth-child(3) .checkout-step-action > .btn", "css:finder"],
+        ["xpath=(//button[@type='button'])[13]", "xpath:attributes"],
+        ["xpath=//div[@id='app']/div/section/div/div/form/div[2]/div/div/div[3]/div/div[3]/button", "xpath:idRelative"],
+        ["xpath=//div[3]/div/div[3]/button", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "18f18fce-cebc-4c46-94c8-97879b75417c",
+      "comment": "",
+      "command": "click",
+      "target": "id=btnCreditCard",
+      "targets": [
+        ["id=btnCreditCard", "id"],
+        ["css=#btnCreditCard", "css:finder"],
+        ["xpath=//button[@id='btnCreditCard']", "xpath:attributes"],
+        ["xpath=//div[@id='app']/div/section/div/div/form/div[2]/div[3]/div/div/div[5]/div/button", "xpath:idRelative"],
+        ["xpath=//div[5]/div/button", "xpath:position"]
+      ],
+      "value": ""
+    }]
+  }, {
+    "id": "d7f90122-1ab6-4655-8d6a-13b167588b9a",
+    "name": "Autobuy GIGABYTE GeForce RTX 3070 EAGLE",
+    "commands": [{
+      "id": "5a71da4e-29b2-43d7-8e9e-373abea31b54",
+      "comment": "",
+      "command": "open",
+      "target": "https://www.newegg.com/gigabyte-geforce-rtx-3070-gv-n3070eagle-8gd/p/N82E16814932344",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "74694210-d808-4b64-89f4-37b0c4bad1f4",
+      "comment": "",
+      "command": "assertNotText",
+      "target": "css=.flags-body > span",
+      "targets": [],
+      "value": "OUT OF STOCK"
+    }, {
+      "id": "e0810779-67cb-4c7b-9065-8a1b60e0fef2",
+      "comment": "",
+      "command": "assertText",
+      "target": "css=.btn-wide",
+      "targets": [],
+      "value": "ADD TO CART"
+    }, {
+      "id": "b181832d-f93f-4a8b-8f41-a84dd07f318c",
+      "comment": "",
+      "command": "click",
+      "target": "xpath=//div[@id='ProductBuy']/div/div[2]/button",
+      "targets": [
+        ["css=.btn-wide", "css:finder"],
+        ["xpath=//div[@id='ProductBuy']/div/div[2]/button", "xpath:idRelative"],
+        ["xpath=//div[2]/button", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "799bbfdf-46b0-417e-b12c-cba21e2ff2b5",
+      "comment": "",
+      "command": "click",
+      "target": "xpath=//div[@id='modal-intermediary']/div/div/div[2]/div[2]/button[2]",
+      "targets": [
+        ["css=.btn-undefined", "css:finder"],
+        ["xpath=//div[@id='modal-intermediary']/div/div/div[2]/div[2]/button[2]", "xpath:idRelative"],
+        ["xpath=//div[2]/div[2]/button[2]", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "0c415693-0737-4a02-85d2-91b2da8faeb5",
+      "comment": "",
+      "command": "click",
+      "target": "xpath=//div[@id='app']/div/section/div/div/form/div[2]/div[3]/div/div/div[3]/div/button",
+      "targets": [
+        ["css=.btn-primary", "css:finder"],
+        ["xpath=(//button[@type='button'])[9]", "xpath:attributes"],
+        ["xpath=//div[@id='app']/div/section/div/div/form/div[2]/div[3]/div/div/div[3]/div/button", "xpath:idRelative"],
+        ["xpath=//div[3]/div/button", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "88c97428-2499-4434-afe8-6e6df8f6d0e6",
+      "comment": "",
+      "command": "click",
+      "target": "css=.item-cell:nth-child(2) > .checkout-step .btn",
+      "targets": [
+        ["css=.item-cell:nth-child(2) > .checkout-step .btn", "css:finder"],
+        ["xpath=(//button[@type='button'])[9]", "xpath:attributes"],
+        ["xpath=//div[@id='app']/div/section/div/div/form/div[2]/div/div/div[2]/div/div[3]/button", "xpath:idRelative"],
+        ["xpath=//div[2]/div/div[3]/button", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "2d113107-4fc2-4371-8cdf-1d7a710dba0c",
+      "comment": "",
+      "command": "click",
+      "target": "css=.mask-cvv-4",
+      "targets": [
+        ["css=.mask-cvv-4", "css:finder"],
+        ["xpath=//input[@value='_ _ _']", "xpath:attributes"],
+        ["xpath=//div[@id='app']/div/section/div/div/form/div[2]/div/div/div[3]/div/div[2]/div/div[3]/div[2]/div[3]/div/div/label/div[4]/input", "xpath:idRelative"],
+        ["xpath=//div[4]/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "8166c921-b7ee-4802-a585-a0893a1e40d6",
+      "comment": "",
+      "command": "type",
+      "target": "css=.mask-cvv-4",
+      "targets": [
+        ["css=.mask-cvv-4", "css:finder"],
+        ["xpath=//input[@value='1 2 7']", "xpath:attributes"],
+        ["xpath=//div[@id='app']/div/section/div/div/form/div[2]/div/div/div[3]/div/div[2]/div/div[3]/div[2]/div[3]/div/div/label/div[4]/input", "xpath:idRelative"],
+        ["xpath=//div[4]/input", "xpath:position"]
+      ],
+      "value": "1 2 7"
+    }, {
+      "id": "8bfa21ce-7a31-406c-a155-789aa27b6928",
+      "comment": "",
+      "command": "click",
+      "target": "css=.item-cell:nth-child(3) .checkout-step-action > .btn",
+      "targets": [
+        ["css=.item-cell:nth-child(3) .checkout-step-action > .btn", "css:finder"],
+        ["xpath=(//button[@type='button'])[13]", "xpath:attributes"],
+        ["xpath=//div[@id='app']/div/section/div/div/form/div[2]/div/div/div[3]/div/div[3]/button", "xpath:idRelative"],
+        ["xpath=//div[3]/div/div[3]/button", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "ac324149-7442-411c-a97e-9bd27a67ab11",
+      "comment": "",
+      "command": "click",
+      "target": "id=btnCreditCard",
+      "targets": [
+        ["id=btnCreditCard", "id"],
+        ["css=#btnCreditCard", "css:finder"],
+        ["xpath=//button[@id='btnCreditCard']", "xpath:attributes"],
+        ["xpath=//div[@id='app']/div/section/div/div/form/div[2]/div[3]/div/div/div[5]/div/button", "xpath:idRelative"],
+        ["xpath=//div[5]/div/button", "xpath:position"]
+      ],
+      "value": ""
+    }]
+  }],
+  "suites": [{
+    "id": "05ec4ec3-a431-4c99-b593-00d16cbfadc6",
+    "name": "Newegg Autobuy",
+    "persistSession": false,
+    "parallel": false,
+    "timeout": 100,
+    "tests": ["eaa8cc05-a46e-401c-914c-a725afbc93f8", "fed3735f-2c86-4b51-ab86-ad49465b178b", "d7f90122-1ab6-4655-8d6a-13b167588b9a", "ac7bb9d6-a554-495a-9a58-67bc5a14b857", "667d8643-a46b-4334-882a-a21680b32687", "e5057b77-be68-45b8-874d-c0580db5a045", "3276cbad-5ddd-4279-9ffe-60c78105ab4e"]
+  }],
+  "urls": ["https://www.newegg.com/", "https://www.newegg.com/arctic-silver-as5-3-5g/p/N82E16835100007"],
+  "plugins": []
+}
